@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: linear-gradient(to top, #212a3e80, #212a3e60),
+    url(../images/darkest.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:where(.otp, form, .input-field, header) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  /* background-color: #fff; */
+  padding: 30px 65px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+  row-gap: 20px;
+}
+
+.otp header {
+  height: 65px;
+  width: 65px;
+  background-color: #0c215a;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.otp h4 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 540;
+}
+
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.input-field input {
+  height: 45px;
+  width: 43px;
+  border-radius: 10%;
+  outline: none;
+  font-size: 25px;
+  border: 2px solid #ddd;
+  text-align: center;
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+form button {
+  margin-top: 25px;
+  width: 100%;
+  background: #6e93f7;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* pointer-events: none; */
+}
+
+form button.active {
+  background: #0c215a;
+  pointer-events: auto;
+}
+
+form button:hover {
+  background: rgba(128, 128, 128, 0.721);
+}
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffe5e5;
+  padding: 10px 15px;
+  border: 1px solid #f5c2c2;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error-message p {
+  color: #d9534f;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.error-message i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.resend {
+  background: #d9534f;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-left: 10px;
+}
+
+.resend:hover {
+  background: #c9302c;
+}

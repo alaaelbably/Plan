@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: linear-gradient(to top, #212a3e80, #212a3e60),
+    url(../images/darkest.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  /* background-color: #ebf4f6; */
+}
+
+.MAIN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.signup-form {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  max-width: 500px;
+  padding: 30px;
+  /* background-color: #071952; */
+  border-radius: 15px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-block: 15px;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-left: 5px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.form-group i {
+  color: #212a3e;
+  font-size: 20px;
+}
+
+.form-group .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+
+.form-group .check {
+  width: 20px;
+  height: 20px;
+}
+
+.form-group ::placeholder {
+  font-size: 16px;
+}
+
+.form-group input {
+  width: 90%;
+  /* border-radius: 15px; */
+  color: black;
+  border: none;
+  background-color: transparent;
+}
+
+.signup-form h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  color: white;
+}
+
+.btn2 {
+  width: 40%;
+  height: 45px;
+  margin: 10px auto;
+  color: #fff;
+  justify-content: center;
+  display: block;
+  margin-top: 20px;
+
+  border-radius: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background-color: #C5705D;
+}
+
+.btn2:hover {
+  background-color: #c5705dda;
+  color: white;
+}
+input:focus{
+  outline: none;
+}
+@media (max-width: 768px) {
+  .form-group {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .form-group .icon {
+    height: 35px;
+  }
+
+  .signup-form {
+    padding: 20px;
+  }
+
+  .btn2 {
+    width: 60%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .form-group .icon {
+    height: 30px;
+  }
+
+  .signup-form {
+    padding: 15px;
+  }
+
+  .btn2 {
+    width: 80%;
+    font-size: 16px;
+  }
+}

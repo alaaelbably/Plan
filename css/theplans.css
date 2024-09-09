@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.plans-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.restPlans {
+  width: 80%;
+}
+.slide {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  margin-top: 30px;
+}
+.all-plans-up {
+  width: 100%;
+}
+.slide {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  gap: 15px;
+}
+.slide a {
+  background-color: #c5705d;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 10px;
+  margin: 1% auto;
+}
+
+.card {
+  padding: 10px;
+  color: #1e2124;
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-right: 5px; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  min-width: 22%;
+  min-height: 60%;
+}
+.slide .card:nth-child(3) {
+background-color: #ffffff;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slide p {
+ 
+  font-size: smaller;
+  padding-inline: 15px;
+  padding-top: 20px;
+}
+
+.slide h4 {
+  text-transform:capitalize;
+  margin-bottom: 10px;
+  color: #1e2124;
+  font-size: larger;
+  position: relative;
+  top: 20px;
+  bottom: 10px;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.icon1 {
+  display: flex;
+  padding-inline: 3px;
+}
+
+.describe {
+  position: relative;
+  bottom: 20px;
+  padding-inline: 3px;
+}
+
+
+
+.title {
+  text-align: center;
+  min-height: 10vh;
+  position: relative;
+  color: #1e2124;
+  padding-top: 20px;
+}
+
+.price {
+  position: relative;
+  bottom: 30px;
+}
+.smaller-side {
+  width: 6%;
+}
+.bigger-div {
+  width: 93%;
+}
+.dark-mode .title {
+  color: #fff;
+}
+.dark-mode h4 {
+  color: #fff;
+}
+.dark-mode .card {
+  background-color: #1e2124;
+  color: #f6f6f6;
+}
+.dark-mode .slide a {
+  background-color: #0b2b4a;
+}
+.dark-mode .slide .card:nth-child(3) {
+  background-color: #000000;
+  }
+@media (max-width: 1005px) {
+  .restPlans {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 774px) {
+  .slide {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+  }
+}
